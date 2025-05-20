@@ -1,6 +1,6 @@
 package com.pluralsight.finance;
 
-public abstract class Asset implements IValuable{
+public  class Asset implements IValuable{
     String name;
     double marketValue;
 

@@ -2,8 +2,8 @@ package com.pluralsight.finance;
 
 public class CreditCard extends LiquidAccount {
 
-    public CreditCard(String name, String accountNumber, double balance) {
-        super(accountNumber, balance, name);
+    public CreditCard(String name, double balance) {
+        super(name, balance);
     }
 
     public void charge(double amount) {

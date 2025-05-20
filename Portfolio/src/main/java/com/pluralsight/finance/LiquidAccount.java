@@ -11,6 +11,11 @@ public class LiquidAccount implements IValuable {
         this.name = name;
     }
 
+    public LiquidAccount(String name, double balance){
+        this.name = name;
+        this.balance = balance;
+    }
+
 
     public double getValue() {
         return balance;
