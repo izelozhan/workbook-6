@@ -16,7 +16,7 @@ public class FixedList <T>{
         if (items.size() < maxSize){
             items.add(item);
         } else {
-            System.out.println("Can not add your item: " + item + ". List has reached max size!");
+            throw  new RuntimeException("Can not add your item: " + item + ". List has reached max size!");
         }
     }
 
