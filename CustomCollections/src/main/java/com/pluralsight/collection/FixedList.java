@@ -1,4 +1,26 @@
 package com.pluralsight.collection;
 
-public class FixedList {
+import java.util.ArrayList;
+import java.util.List;
+
+public class FixedList <T>{
+    List<T> items;
+    int maxSize;
+
+    FixedList(int maxSize){
+        this.maxSize = maxSize;
+        this.items = new ArrayList<>();
+    }
+
+    public void add(T item){
+        if (items.size() < maxSize){
+            items.add(item);
+        } else {
+            System.out.println("Can not add your item: " + item + ". List has reached max size!");
+        }
+    }
+
+    public List<T> getItems(){
+        return items;
+    }
 }
